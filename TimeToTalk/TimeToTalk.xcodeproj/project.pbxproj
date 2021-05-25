@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A09BAAF26567E46006321C2 /* CameraView in Frameworks */ = {isa = PBXBuildFile; productRef = 6A09BAAE26567E46006321C2 /* CameraView */; };
+		6A09BAC826569F40006321C2 /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09BAC726569F40006321C2 /* VideoCallView.swift */; };
+		6A333E52265795370046F932 /* TalkChoiceViewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A333E51265795370046F932 /* TalkChoiceViewGroup.swift */; };
+		6A9316E32653D972008A8E9E /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9316E22653D972008A8E9E /* ChatHelper.swift */; };
+		6A9E19522654FF8400DFBC2F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9E19512654FF8400DFBC2F /* SettingsView.swift */; };
+		6A9E19652655174500DFBC2F /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9E19642655174500DFBC2F /* ReportView.swift */; };
+		6AAF2B2B2653BEED002489C2 /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF2B2A2653BEED002489C2 /* ContentMessageView.swift */; };
+		6AAF2B2E2653BFC2002489C2 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF2B2D2653BFC2002489C2 /* MessageView.swift */; };
+		6AAF2B312653C0EE002489C2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF2B302653C0EE002489C2 /* Message.swift */; };
+		6AAF2B342653C117002489C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF2B332653C117002489C2 /* User.swift */; };
+		6ABC3B532656508000AAE757 /* MessageScreenDetailedGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC3B522656508000AAE757 /* MessageScreenDetailedGroup.swift */; };
+		6ABC3B5C2656594600AAE757 /* GroupCallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC3B5B2656594600AAE757 /* GroupCallScreen.swift */; };
+		6AC700B6265536E70093BB78 /* TalkViewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC700B5265536E70093BB78 /* TalkViewGroup.swift */; };
+		6AC700B9265538630093BB78 /* TalkIntroductionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC700B8265538630093BB78 /* TalkIntroductionGroupView.swift */; };
+		6AC700D4265549FA0093BB78 /* TalkAnswerViewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC700D3265549FA0093BB78 /* TalkAnswerViewGroup.swift */; };
+		6AF5DF8A265270B700BC721F /* MessagesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5DF89265270B700BC721F /* MessagesScreen.swift */; };
+		6AF5DF8F2652AB9500BC721F /* MessageScreenDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5DF8E2652AB9500BC721F /* MessageScreenDetailed.swift */; };
+		8F002432265255B600FD4F57 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F002431265255B600FD4F57 /* userData.json */; };
+		8F002434265259E300FD4F57 /* TalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F002433265259E300FD4F57 /* TalkView.swift */; };
+		8F51896B264BFFAB003B232C /* TimeToTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51896A264BFFAB003B232C /* TimeToTalkApp.swift */; };
+		8F51896D264BFFAB003B232C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51896C264BFFAB003B232C /* ContentView.swift */; };
+		8F51896F264BFFAD003B232C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F51896E264BFFAD003B232C /* Assets.xcassets */; };
+		8F518972264BFFAD003B232C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F518971264BFFAD003B232C /* Preview Assets.xcassets */; };
+		8F9221FC2653C10E00F1CCBB /* TalkIntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9221FB2653C10E00F1CCBB /* TalkIntroductionView.swift */; };
+		8F9221FE2653DE0100F1CCBB /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9221FD2653DE0100F1CCBB /* AudioRecorder.swift */; };
+		8F9222002653E23100F1CCBB /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9221FF2653E23100F1CCBB /* RecordingsList.swift */; };
+		8F9222022653E48C00F1CCBB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9222012653E48C00F1CCBB /* Extensions.swift */; };
+		8F9222042653EC3D00F1CCBB /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9222032653EC3D00F1CCBB /* RecordingDataModel.swift */; };
+		8F9222062653ED3300F1CCBB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9222052653ED3300F1CCBB /* Helper.swift */; };
+		8F9222082653F1E900F1CCBB /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9222072653F1E900F1CCBB /* AudioPlayer.swift */; };
+		8FCB84E42655453C0064E7D2 /* TalkAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB84E32655453C0064E7D2 /* TalkAnswerView.swift */; };
+		8FCB84E6265545640064E7D2 /* TalkChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB84E5265545640064E7D2 /* TalkChoiceView.swift */; };
+		8FCB84E82656674F0064E7D2 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB84E72656674F0064E7D2 /* InformationView.swift */; };
+		8FCB84EA26569ECF0064E7D2 /* CallScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB84E926569ECF0064E7D2 /* CallScreenView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A09BAC726569F40006321C2 /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
+		6A333E51265795370046F932 /* TalkChoiceViewGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkChoiceViewGroup.swift; sourceTree = "<group>"; };
+		6A9316E22653D972008A8E9E /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		6A9E19512654FF8400DFBC2F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6A9E19642655174500DFBC2F /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		6AAF2B2A2653BEED002489C2 /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		6AAF2B2D2653BFC2002489C2 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		6AAF2B302653C0EE002489C2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6AAF2B332653C117002489C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6ABC3B522656508000AAE757 /* MessageScreenDetailedGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenDetailedGroup.swift; sourceTree = "<group>"; };
+		6ABC3B5B2656594600AAE757 /* GroupCallScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallScreen.swift; sourceTree = "<group>"; };
+		6AC700B5265536E70093BB78 /* TalkViewGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewGroup.swift; sourceTree = "<group>"; };
+		6AC700B8265538630093BB78 /* TalkIntroductionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkIntroductionGroupView.swift; sourceTree = "<group>"; };
+		6AC700D3265549FA0093BB78 /* TalkAnswerViewGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAnswerViewGroup.swift; sourceTree = "<group>"; };
+		6AF5DF89265270B700BC721F /* MessagesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesScreen.swift; sourceTree = "<group>"; };
+		6AF5DF8E2652AB9500BC721F /* MessageScreenDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenDetailed.swift; sourceTree = "<group>"; };
+		8F002431265255B600FD4F57 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
+		8F002433265259E300FD4F57 /* TalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkView.swift; sourceTree = "<group>"; };
+		8F518967264BFFAB003B232C /* TimeToTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F51896A264BFFAB003B232C /* TimeToTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTalkApp.swift; sourceTree = "<group>"; };
+		8F51896C264BFFAB003B232C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F51896E264BFFAD003B232C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F518971264BFFAD003B232C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F518973264BFFAD003B232C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9221FB2653C10E00F1CCBB /* TalkIntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkIntroductionView.swift; sourceTree = "<group>"; };
+		8F9221FD2653DE0100F1CCBB /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		8F9221FF2653E23100F1CCBB /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
+		8F9222012653E48C00F1CCBB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8F9222032653EC3D00F1CCBB /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		8F9222052653ED3300F1CCBB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		8F9222072653F1E900F1CCBB /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		8FCB84E32655453C0064E7D2 /* TalkAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAnswerView.swift; sourceTree = "<group>"; };
+		8FCB84E5265545640064E7D2 /* TalkChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkChoiceView.swift; sourceTree = "<group>"; };
+		8FCB84E72656674F0064E7D2 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		8FCB84E926569ECF0064E7D2 /* CallScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScreenView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F518964264BFFAB003B232C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A09BAAF26567E46006321C2 /* CameraView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A9E19492654FE6800DFBC2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AAF2B332653C117002489C2 /* User.swift */,
+				6AAF2B302653C0EE002489C2 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A9E194B2654FEB000DFBC2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F9222052653ED3300F1CCBB /* Helper.swift */,
+				6A9316E22653D972008A8E9E /* ChatHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6A9E194C2654FEC400DFBC2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F51896A264BFFAB003B232C /* TimeToTalkApp.swift */,
+				8F51896C264BFFAB003B232C /* ContentView.swift */,
+				6AAF2B2D2653BFC2002489C2 /* MessageView.swift */,
+				6AAF2B2A2653BEED002489C2 /* ContentMessageView.swift */,
+				6AF5DF8E2652AB9500BC721F /* MessageScreenDetailed.swift */,
+				8F002433265259E300FD4F57 /* TalkView.swift */,
+				6AC700B5265536E70093BB78 /* TalkViewGroup.swift */,
+				6AF5DF89265270B700BC721F /* MessagesScreen.swift */,
+				6A9E19512654FF8400DFBC2F /* SettingsView.swift */,
+				6A9E19642655174500DFBC2F /* ReportView.swift */,
+				8F9221FB2653C10E00F1CCBB /* TalkIntroductionView.swift */,
+				6AC700B8265538630093BB78 /* TalkIntroductionGroupView.swift */,
+				8FCB84E32655453C0064E7D2 /* TalkAnswerView.swift */,
+				6AC700D3265549FA0093BB78 /* TalkAnswerViewGroup.swift */,
+				8FCB84E5265545640064E7D2 /* TalkChoiceView.swift */,
+				6A333E51265795370046F932 /* TalkChoiceViewGroup.swift */,
+				8FCB84E72656674F0064E7D2 /* InformationView.swift */,
+				6ABC3B522656508000AAE757 /* MessageScreenDetailedGroup.swift */,
+				6ABC3B5B2656594600AAE757 /* GroupCallScreen.swift */,
+				6A09BAC726569F40006321C2 /* VideoCallView.swift */,
+				8FCB84E926569ECF0064E7D2 /* CallScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A9E194D2654FEFA00DFBC2F /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				8F9222012653E48C00F1CCBB /* Extensions.swift */,
+				8F9221FD2653DE0100F1CCBB /* AudioRecorder.swift */,
+				8F9222032653EC3D00F1CCBB /* RecordingDataModel.swift */,
+				8F9221FF2653E23100F1CCBB /* RecordingsList.swift */,
+				8F9222072653F1E900F1CCBB /* AudioPlayer.swift */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		8F00242E2652552E00FD4F57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F002431265255B600FD4F57 /* userData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F51895E264BFFAB003B232C = {
+			isa = PBXGroup;
+			children = (
+				8F518969264BFFAB003B232C /* TimeToTalk */,
+				8F518968264BFFAB003B232C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F518968264BFFAB003B232C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F518967264BFFAB003B232C /* TimeToTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F518969264BFFAB003B232C /* TimeToTalk */ = {
+			isa = PBXGroup;
+			children = (
+				6A9E194D2654FEFA00DFBC2F /* Recorder */,
+				6A9E194C2654FEC400DFBC2F /* Views */,
+				6A9E194B2654FEB000DFBC2F /* Helpers */,
+				6A9E19492654FE6800DFBC2F /* Models */,
+				8F00242E2652552E00FD4F57 /* Resources */,
+				8F51896E264BFFAD003B232C /* Assets.xcassets */,
+				8F518973264BFFAD003B232C /* Info.plist */,
+				8F518970264BFFAD003B232C /* Preview Content */,
+			);
+			path = TimeToTalk;
+			sourceTree = "<group>";
+		};
+		8F518970264BFFAD003B232C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F518971264BFFAD003B232C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F518966264BFFAB003B232C /* TimeToTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F518976264BFFAD003B232C /* Build configuration list for PBXNativeTarget "TimeToTalk" */;
+			buildPhases = (
+				8F518963264BFFAB003B232C /* Sources */,
+				8F518964264BFFAB003B232C /* Frameworks */,
+				8F518965264BFFAB003B232C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeToTalk;
+			packageProductDependencies = (
+				6A09BAAE26567E46006321C2 /* CameraView */,
+			);
+			productName = TimeToTalk;
+			productReference = 8F518967264BFFAB003B232C /* TimeToTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F51895F264BFFAB003B232C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8F518966264BFFAB003B232C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 8F518962264BFFAB003B232C /* Build configuration list for PBXProject "TimeToTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F51895E264BFFAB003B232C;
+			packageReferences = (
+				6A09BAAD26567E46006321C2 /* XCRemoteSwiftPackageReference "CameraView" */,
+			);
+			productRefGroup = 8F518968264BFFAB003B232C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F518966264BFFAB003B232C /* TimeToTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F518965264BFFAB003B232C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F518972264BFFAD003B232C /* Preview Assets.xcassets in Resources */,
+				8F51896F264BFFAD003B232C /* Assets.xcassets in Resources */,
+				8F002432265255B600FD4F57 /* userData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F518963264BFFAB003B232C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A09BAC826569F40006321C2 /* VideoCallView.swift in Sources */,
+				6AAF2B2B2653BEED002489C2 /* ContentMessageView.swift in Sources */,
+				8F002434265259E300FD4F57 /* TalkView.swift in Sources */,
+				8FCB84E6265545640064E7D2 /* TalkChoiceView.swift in Sources */,
+				6ABC3B5C2656594600AAE757 /* GroupCallScreen.swift in Sources */,
+				8FCB84E42655453C0064E7D2 /* TalkAnswerView.swift in Sources */,
+				8F51896D264BFFAB003B232C /* ContentView.swift in Sources */,
+				6A9E19522654FF8400DFBC2F /* SettingsView.swift in Sources */,
+				6ABC3B532656508000AAE757 /* MessageScreenDetailedGroup.swift in Sources */,
+				8F9221FC2653C10E00F1CCBB /* TalkIntroductionView.swift in Sources */,
+				6AC700B9265538630093BB78 /* TalkIntroductionGroupView.swift in Sources */,
+				8FCB84EA26569ECF0064E7D2 /* CallScreenView.swift in Sources */,
+				6AC700D4265549FA0093BB78 /* TalkAnswerViewGroup.swift in Sources */,
+				8F9222042653EC3D00F1CCBB /* RecordingDataModel.swift in Sources */,
+				8F9222002653E23100F1CCBB /* RecordingsList.swift in Sources */,
+				6A333E52265795370046F932 /* TalkChoiceViewGroup.swift in Sources */,
+				8F9222062653ED3300F1CCBB /* Helper.swift in Sources */,
+				8F51896B264BFFAB003B232C /* TimeToTalkApp.swift in Sources */,
+				6AF5DF8F2652AB9500BC721F /* MessageScreenDetailed.swift in Sources */,
+				6AAF2B342653C117002489C2 /* User.swift in Sources */,
+				6AAF2B312653C0EE002489C2 /* Message.swift in Sources */,
+				6AAF2B2E2653BFC2002489C2 /* MessageView.swift in Sources */,
+				6A9E19652655174500DFBC2F /* ReportView.swift in Sources */,
+				6AC700B6265536E70093BB78 /* TalkViewGroup.swift in Sources */,
+				6AF5DF8A265270B700BC721F /* MessagesScreen.swift in Sources */,
+				8FCB84E82656674F0064E7D2 /* InformationView.swift in Sources */,
+				6A9316E32653D972008A8E9E /* ChatHelper.swift in Sources */,
+				8F9222082653F1E900F1CCBB /* AudioPlayer.swift in Sources */,
+				8F9221FE2653DE0100F1CCBB /* AudioRecorder.swift in Sources */,
+				8F9222022653E48C00F1CCBB /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8F518974264BFFAD003B232C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F518975264BFFAD003B232C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F518977264BFFAD003B232C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeToTalk/Preview Content\"";
+				DEVELOPMENT_TEAM = 5TDU3AAKY7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeToTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.cox.denny.TimeToTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F518978264BFFAD003B232C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeToTalk/Preview Content\"";
+				DEVELOPMENT_TEAM = 5TDU3AAKY7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeToTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.cox.denny.TimeToTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F518962264BFFAB003B232C /* Build configuration list for PBXProject "TimeToTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F518974264BFFAD003B232C /* Debug */,
+				8F518975264BFFAD003B232C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F518976264BFFAD003B232C /* Build configuration list for PBXNativeTarget "TimeToTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F518977264BFFAD003B232C /* Debug */,
+				8F518978264BFFAD003B232C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A09BAAD26567E46006321C2 /* XCRemoteSwiftPackageReference "CameraView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brettfazio/CameraView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A09BAAE26567E46006321C2 /* CameraView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A09BAAD26567E46006321C2 /* XCRemoteSwiftPackageReference "CameraView" */;
+			productName = CameraView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8F51895F264BFFAB003B232C /* Project object */;
+}
